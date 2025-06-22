@@ -1,0 +1,26 @@
+public class Main {
+	public static void main(String[] args) {
+		 String str1 = "swapnil";
+		 String str2 = "swapnil";
+		 String str3 = new String("swapnil");
+		 
+		 
+		 if(str1 == str2)
+		 {
+		 	  System.out.println("equal ");
+		 }
+		 else
+		 {  
+		    System.out.println("not equal ");
+		 }
+		 
+		 //use string equals funtion
+		 if(str1.equals(str3))
+		 {
+		 	  System.out.println("equal ");
+		 }else{
+		 	  
+		 System.out.println("not equal ");
+		 }
+	}
+}
