@@ -1,0 +1,17 @@
+public class Main {
+	
+	
+public static String substring(String str,int si,int ei)
+{
+	    	for(int i=si;i<ei;i++)
+	    	{
+	    		   str += str.charAt(i);
+	    	}
+	    	return str;
+}
+	
+	public static void main(String[] args) {
+		String str = "swapnil";
+		System.out.println(substring(str,0,5));
+		System.out.println(str.substring(0,5));
+	}
