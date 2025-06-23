@@ -1,0 +1,47 @@
+public class Main {
+	
+	public static void evenodd(int n )
+	{
+		    int bitmask = 1;
+		    if((n & bitmask)==0)
+		    {
+		    	  System.out.println("Even number");
+		    }else{
+		    	  System.out.println("Odd number");
+		    }
+	}
+	
+	public static int gitith(int n ,int i)
+	{
+		   int bitmask=1<<i;
+		   if((n & bitmask)==0)
+		   { 
+		       return 0;
+		   }
+		   else
+		   {
+		   	  return 1;
+		   }
+	}
+	
+	public static int setih(int n ,int i)
+	{
+		    int bitmask = 1<<i;
+		    return n | bitmask;
+	}
+	
+	
+	public static int clearith(int n ,int i)
+	{
+		    int bitmask = ~(1<<i);
+		    return n & bitmask;
+	}
+		   
+	public static void main(String[] args) {
+	//	  evenodd(1);
+	//	  evenodd(10);
+		  System.out.println(gitith(10,2));
+		  System.out.println(setih(10,2));
+		  System.out.println(clearith(10,2));
+	}
+}
