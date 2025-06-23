@@ -1,0 +1,21 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class gitith {
+    
+    public static int gitith(int n ,int i)
+    {
+        int bitmask = 1<<i;
+        if((n & bitmask)==0)
+        {
+            return 0;
+        }else{
+            return 1;
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println(gitith(10,2));
+         System.out.println(gitith(10,3));
+
+    }
+}
