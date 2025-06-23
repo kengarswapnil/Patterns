@@ -1,0 +1,21 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void evenodd(int n)
+    {
+        int bitmask = 1;
+        if((n & bitmask) == 0)
+        {
+            System.out.println("Even number");
+        }else{
+            System.out.println("Odd number");
+        }
+    }
+    public static void main(String[] args) {
+       evenodd(1);
+       evenodd(20);
+       evenodd(12);
+       evenodd(21);
+    }
+}
