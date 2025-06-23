@@ -1,0 +1,12 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class  Bitmaipulation {
+    public static void main(String[] args) {
+        System.out.println(5 & 6);
+        System.out.println(5 | 6);
+        System.out.println(~6);
+        System.out.println(6<<1);
+        System.out.println(6>>1);
+    }
+}
