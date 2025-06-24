@@ -1,0 +1,50 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static int clearith(int n,int i)
+    {
+        int bitmask = ~(1<<i);
+        return n & bitmask;
+    }
+    
+    public static int setith(int n,int i)
+    {
+        int bitmask = (1<<i);
+        return n | bitmask;
+    }
+    
+    public static int update(int n , int i,int newbit)
+    {
+        if(newbit==0)
+        {
+            return clearith(n,i);
+        }else{
+            return setith(n,i);
+        }
+    }
+    
+    public static int clearithrange(int n,int i)
+    {
+        int bitmask = ~(0)<<i;
+        return n & bitmask;
+    }
+
+    public static int clearrange2(int n ,int i,int j)
+    {
+        int a = (~(0)<<(j+1));
+        int b = (1<<i)-1;
+        int bitmask = a|b;
+        return n & bitmask;
+    }
+    public static void main(String[] args) {
+        // System.out.println(clearith(10,1));
+        // System.out.println(setith(10,2));
+        // System.out.println(update(10,2,1));
+        // System.out.println(clearithrange(15,2));
+        System.out.println(clearrange2(15,2,7));
+        
+
+
+    }
+}
