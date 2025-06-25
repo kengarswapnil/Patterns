@@ -1,0 +1,25 @@
+public class Main {	
+	public static int count(int n)
+	{
+		   int count =0;
+		   while(n>0)
+		   {
+		   	  if((n & 1)!=0)
+		   	  {
+		   	  	  count++;
+		   	  }
+		   	  n= n>>1;
+		   }
+		   return count;
+	}
+		   	  	  
+public static boolean power(int n)
+{
+		  return (n&(n-1))==0;  	
+}		   			   	  	  		   	  	  
+		   	  	  
+	public static void main(String[] args) {
+		System.out.println(count(10));
+		System.out.println(power(10));
+	}
+}
