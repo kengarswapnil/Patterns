@@ -1,0 +1,58 @@
+public class Main {
+	
+public static void count(String s)
+{
+	  
+	   char vowels []= {'a','i','o','e','u'};
+	    int count =0;
+	   for(int i=0;i<s.length();i++)
+	      {
+	      	  char ch = Character.toLowerCase(s.charAt(i));
+	      	  
+	      	  for(int vowel : vowels)
+	      	  {
+	      	  if(ch==vowel)
+	      	  {
+	      	  	  count++;
+	      	  	  break;
+	      	  }
+	      }
+	      }
+	       System.out.println(count);
+}
+
+
+public static void reverse(String s)
+{
+	       String reverse= "";
+	       
+	       for(int i=s.length()-1;i>=0;i--)
+	       {
+	       	   reverse +=s.charAt(i);
+	       }
+	       
+	       System.out.println(reverse);
+}
+
+public static int [] reverseArray(int arr[])
+{
+	   int n = arr.length;
+	   int a [] = new int[n];
+	   for(int i=0;i<n;i++)
+	   {
+	   	  a[i]=arr[n-i-1];
+	   }
+	   return a;
+}
+	   
+	public static void main(String[] args) {
+		count("apple");
+reverse("swapnil");
+
+int arr[]={1,2,3,4,5};
+int reversearr[] = reverseArray(arr);
+
+for(int num : reversearr)
+System.out.print(num);
+	}
+}
